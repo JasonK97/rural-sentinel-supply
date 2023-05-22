@@ -7,7 +7,7 @@
     "start": "next start",
     "lint": "next lint"
   },
-  "author": "Jamie Barton <jamie@notrab.dev> (https://notrab.dev)",
+  "author": "Jason Kent <rural.sentinel@gmail.com> (https://jasonkent.dev)",
   "dependencies": {
     "@tailwindcss/forms": "0.5.3",
     "classcat": "5.0.4",
