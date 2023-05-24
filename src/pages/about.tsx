@@ -17,7 +17,7 @@ function AboutPage() {
         Amidst the vast expanse of small towns and farmland, a group of dedicated individuals 
         emerge as Rural Sentinels — watchers and protectors of their communities.
         <br /><br />
-        Within our ranks, you'll find a diverse tapestry of backgrounds and professions. Some 
+        Within our ranks, you&apos;ll find a diverse tapestry of backgrounds and professions. Some 
         of us are Homesteaders, tending to the land and embracing self-sufficiency. Others are 
         Police officers, serving with unwavering dedication. We have Active Duty and Veteran 
         Military personnel who bring their invaluable experience to the table. From blue collar 
