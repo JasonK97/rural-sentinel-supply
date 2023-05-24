@@ -125,19 +125,19 @@ const Layout = ({ children }) => {
             </a>
             , Built by{" "}
             <a
-              href="https://www.instagram.com/rural.sentinel/"
-              title="Follow us on Instagram"
+              href="https://www.twitter.com/JasonKent_/"
+              title="Software Developer"
               target="_blank"
               rel="noopener noreferrer"
               className="ml-0.5 text-gray-800 hover:text-blue-600"
             >
-              @rural.sentinel
+              @JasonKent_
             </a>
           </p>
           <nav className="flex items-center justify-end space-x-3 md:space-x-6">
-            <Link href="/about">
+            <Link href="/blog">
               <a className="text-gray-800 hover:text-blue-600 p-1 transition text-sm">
-                FAQS
+                Blog
               </a>
             </Link>
             <Link href="/terms-of-sale">
