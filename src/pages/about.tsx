@@ -1,4 +1,4 @@
-function TermsPage() {
+function AboutPage() {
   return (
     <div className="max-w-xl mx-auto prose prose-blue">
       <h2>What is a Rural Sentinel?</h2>
@@ -45,7 +45,7 @@ function TermsPage() {
   );
 }
 
-export default TermsPage;
+export default AboutPage;
 
 
 // conveys the idea of a company or store that provides essential 

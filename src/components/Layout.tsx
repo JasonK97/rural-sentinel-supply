@@ -11,11 +11,11 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <header className="py-6 md:py-12">
+      <header className="py-1">
         <div className="max-w-6xl mx-auto px-6">
           <div className="flex items-center justify-between">
             <div className="md:w-1/3">
-              <nav className="flex items-center justify-start space-x-3 md:space-x-6">
+              <nav className="flex items-center justify-start space-x-3 md:space-x-4">
                 <Link href="/">
                   <a className="text-gray-800 hover:text-blue-600 p-1 transition">
                     Home
@@ -26,9 +26,14 @@ const Layout = ({ children }) => {
                     About
                   </a>
                 </Link>
-                <Link href="/products">
+                <Link href="/soft-goods">
                   <a className="text-gray-800 hover:text-blue-600 p-1 transition">
-                    All Products
+                    Soft Goods
+                  </a>
+                </Link>
+                <Link href="/hard-goods">
+                  <a className="text-gray-800 hover:text-blue-600 p-1 transition">
+                    Hard Goods
                   </a>
                 </Link>
               </nav>

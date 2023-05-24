@@ -73,13 +73,6 @@ const Product = (product) => {
             alt={`${activeVariant.name} ${name}`}
             title={`${activeVariant.name} ${name}`}
           />
-          // <Image
-          //   src={activeVariant.files[1].preview_url}
-          //   width={250}
-          //   height={250}
-          //   alt={`${activeVariant.name} ${name}`}
-          //   title={`${activeVariant.name} ${name}`}
-          // />
         )}
       </div>
       <div className="flex-1 p-6 pt-0">
