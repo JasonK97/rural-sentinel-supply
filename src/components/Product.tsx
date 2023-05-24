@@ -35,6 +35,8 @@ const Product = (product) => {
 
   const onWishlist = isSaved(id);
 
+  console.log(product)
+
   return (
     <article className="border border-gray-200 rounded bg-white flex flex-col relative">
       <button
@@ -71,6 +73,13 @@ const Product = (product) => {
             alt={`${activeVariant.name} ${name}`}
             title={`${activeVariant.name} ${name}`}
           />
+          // <Image
+          //   src={activeVariant.files[1].preview_url}
+          //   width={250}
+          //   height={250}
+          //   alt={`${activeVariant.name} ${name}`}
+          //   title={`${activeVariant.name} ${name}`}
+          // />
         )}
       </div>
       <div className="flex-1 p-6 pt-0">

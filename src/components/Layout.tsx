@@ -16,14 +16,19 @@ const Layout = ({ children }) => {
           <div className="flex items-center justify-between">
             <div className="md:w-1/3">
               <nav className="flex items-center justify-start space-x-3 md:space-x-6">
+                <Link href="/">
+                  <a className="text-gray-800 hover:text-blue-600 p-1 transition">
+                    Home
+                  </a>
+                </Link>
                 <Link href="/about">
                   <a className="text-gray-800 hover:text-blue-600 p-1 transition">
                     About
                   </a>
                 </Link>
-                <Link href="/terms-of-sale">
+                <Link href="/products">
                   <a className="text-gray-800 hover:text-blue-600 p-1 transition">
-                    Terms of Sale
+                    All Products
                   </a>
                 </Link>
               </nav>
@@ -31,17 +36,17 @@ const Layout = ({ children }) => {
             <div className="flex-1 flex items-center justify-center">
               <Link href="/">
                 <a className="flex items-center text-gray-900">
-                  <div className="rounded-full w-12 h-12 flex items-center justify-center mr-4">
+                  <div className="rounded-full w-13 h-13 flex items-center justify-center mr-4">
                     <Image 
-                      src="/RSS transparent black.png" 
+                      src="/RSS with name.png" 
                       alt="Rural Sentinel Supply Logo"
-                      height={1000}
-                      width={1000}
+                      height="150"
+                      width="150"
                     />
                   </div>
-                  <span className="text-lg font-medium">
+                  {/* <span className="text-lg font-medium">
                     Rural Sentinel Supply
-                  </span>
+                  </span> */}
                 </a>
               </Link>
             </div>
