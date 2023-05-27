@@ -26,7 +26,7 @@ const IndexPage: React.FC<IndexPageProps> = ({ products }) => (
                 Protect the Herd. Protect the Tribe.
               </h2>
               <p className="max-w-3xl mx-auto mb-10 text-lg text-gray-300">
-                Emergency Preparedness. Self-Defense. Second Amendment. Hunting.
+                Emergency Preparedness, Self-Defense, and the Second Amendment.
               </p>
               <a className="inline-block w-full md:w-auto mb-4 md:mr-6 py-5 px-8 text-sm font-bold uppercase border-2 border-transparent bg-gray-200 rounded hover:bg-gray-100 text-gray-800 transition duration-200"
                 href="/soft-goods">
