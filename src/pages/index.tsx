@@ -24,7 +24,7 @@ const IndexPage: React.FC<IndexPageProps> = ({ products }) => (
                 Rural Sentinel Supply
               </span>
               <h2 className="mt-8 mb-6 text-4xl lg:text-5xl font-bold text-gray-100">
-                Protect the Herd. Protect the Tribe.
+                Protect the Herd. Defend the Tribe.
               </h2>
               <p className="max-w-3xl mx-auto mb-10 text-lg text-gray-300">
                 Emergency Preparedness, Self-Defense, and the Second Amendment.
