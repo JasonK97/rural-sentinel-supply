@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -9,33 +10,81 @@ const Layout = ({ children }) => {
   const { cart } = useSnipcartCount();
   const cartHasItems = cart.items.count !== 0;
 
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const handleMobileMenuToggle = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
   return (
     <>
       <header className="py-1">
         <div className="max-w-6xl mx-auto px-6">
           <div className="flex items-center justify-between">
             <div className="md:w-1/3">
-              <nav className="flex items-center justify-start space-x-3 md:space-x-4">
-                <Link href="/">
-                  <a className="text-gray-800 hover:text-blue-600 p-1 transition">
-                    Home
-                  </a>
-                </Link>
-                <Link href="/about">
-                  <a className="text-gray-800 hover:text-blue-600 p-1 transition">
-                    About
-                  </a>
-                </Link>
-                <Link href="/soft-goods">
-                  <a className="text-gray-800 hover:text-blue-600 p-1 transition">
-                    Soft Goods
-                  </a>
-                </Link>
-                <Link href="/hard-goods">
-                  <a className="text-gray-800 hover:text-blue-600 p-1 transition">
-                    Hard Goods
-                  </a>
-                </Link>
+              <nav className="bg-white border-gray-200">
+                <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                  <button
+                    data-collapse-toggle="navbar-default"
+                    type="button"
+                    className="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+                    aria-controls="navbar-default"
+                    aria-expanded={isMobileMenuOpen ? "true" : "false"}
+                    onClick={handleMobileMenuToggle}
+                  >
+                    <span className="sr-only">Open main menu</span>
+                    <svg
+                      className="w-6 h-6"
+                      aria-hidden="true"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                        clipRule="evenodd"
+                      ></path>
+                    </svg>
+                  </button>
+                  <div
+                    className={`${
+                      isMobileMenuOpen ? "block" : "hidden"
+                    } w-full md:block md:w-auto absolute top-20 left-0 z-10 lg:ml-16`}
+                    id="navbar-default"
+                  >
+                    <ul className="font-medium flex flex-col p-4 md:p-0 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white">
+                      <li className="md:py-2 lg:py-0 md:w-full lg:w-12">
+                        <Link href="/">
+                          <a className="block text-gray-800 hover:text-blue-600 p-2 transition" onClick={handleMobileMenuToggle}>
+                            <span className="block w-full">Home</span>
+                          </a>
+                        </Link>
+                      </li>
+                      <li className="md:py-2 lg:py-0 md:w-full lg:w-12">
+                        <Link href="/about">
+                          <a className="block text-gray-800 hover:text-blue-600 p-2 transition" onClick={handleMobileMenuToggle}>
+                            <span className="block w-full">About</span>
+                          </a>
+                        </Link>
+                      </li>
+                      <li className="md:py-2 lg:py-0 md:w-full lg:w-12">
+                        <Link href="/soft-goods">
+                          <a className="block text-gray-800 hover:text-blue-600 p-2 transition" onClick={handleMobileMenuToggle}>
+                            <span className="block w-full">Soft&nbsp;Goods</span>
+                          </a>
+                        </Link>
+                      </li>
+                      <li className="md:py-2 lg:py-0 md:w-full lg:w-12">
+                        <Link href="/hard-goods">
+                          <a className="block text-gray-800 hover:text-blue-600 lg:ml-10 p-2 transition" onClick={handleMobileMenuToggle}>
+                            <span className="block w-full">Hard&nbsp;Goods</span>
+                          </a>
+                        </Link>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </nav>
             </div>
             <div className="flex-1 flex items-center justify-center">
@@ -55,7 +104,7 @@ const Layout = ({ children }) => {
                 </a>
               </Link>
             </div>
-            <div className="md:w-1/3 flex items-center justify-end space-x-3 -mr-2.5">
+            <div className="md:w-1/3 flex items-center justify-end space-x-3 md:-mr-2.5 lg:-mr-12 lg:mt-8">
               <button
                 className="snipcart-customer-signin appearance-none px-2 text-gray-800 hover:text-blue-600 rounded-md cursor-pointer focus:outline-none focus:text-blue-600 transition relative"
                 aria-label="User login"
@@ -87,21 +136,21 @@ const Layout = ({ children }) => {
                   </svg>
                 </a>
               </Link>
-              <button
-                className="snipcart-checkout appearance-none px-2 text-gray-800 hover:text-blue-600 rounded-md cursor-pointer focus:outline-none focus:text-blue-600 transition relative"
-                aria-label="Cart"
-              >
-                {cartHasItems && (
-                  <span className="absolute bg-blue-600 rounded-full w-2 h-2 top-0 right-0 -mt-1 -mr-1"></span>
-                )}
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  className="w-6 h-6 fill-current"
+                <button
+                  className="snipcart-checkout appearance-none px-2 text-gray-800 hover:text-blue-600 rounded-md cursor-pointer focus:outline-none focus:text-blue-600 transition relative"
+                  aria-label="Cart"
                 >
-                  <path fill="none" d="M0 0h24v24H0z" />
-                  <path d="M4 16V4H2V2h3a1 1 0 0 1 1 1v12h12.438l2-8H8V5h13.72a1 1 0 0 1 .97 1.243l-2.5 10a1 1 0 0 1-.97.757H5a1 1 0 0 1-1-1zm2 7a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm12 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z" />
-                </svg>
+                  {cartHasItems && (
+                    <span className="absolute bg-blue-600 rounded-full w-2 h-2 top-0 right-0 -mt-1 -mr-1"></span>
+                  )}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    className="w-6 h-6 fill-current"
+                  >
+                    <path fill="none" d="M0 0h24v24H0z" />
+                    <path d="M4 16V4H2V2h3a1 1 0 0 1 1 1v12h12.438l2-8H8V5h13.72a1 1 0 0 1 .97 1.243l-2.5 10a1 1 0 0 1-.97.757H5a1 1 0 0 1-1-1zm2 7a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm12 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z" />
+                  </svg>
               </button>
             </div>
           </div>
@@ -125,13 +174,13 @@ const Layout = ({ children }) => {
             </a>
             , Built by{" "}
             <a
-              href="https://www.twitter.com/JasonKent_/"
+              href="https://www.instagram.com/rural.sentinel/"
               title="Software Developer"
               target="_blank"
               rel="noopener noreferrer"
               className="ml-0.5 text-gray-800 hover:text-blue-600"
             >
-              @JasonKent_
+              @rural.sentinel
             </a>
           </p>
           <nav className="flex items-center justify-end space-x-3 md:space-x-6">
