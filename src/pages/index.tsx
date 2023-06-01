@@ -13,7 +13,7 @@ type IndexPageProps = {
   products: PrintfulProduct[];
 };
 
-const IndexPage: React.FC<IndexPageProps> = ({ products }) => (
+const IndexPage: React.FC<IndexPageProps> = () => (
   <>
     <div className="w-full bg-center bg-cover bg-[url('/unsplash/abigail-loney-unsplash.jpg')]">
       <div className="flex items-center justify-center w-full h-full bg-gray-900 bg-opacity-50 py-12">
@@ -39,38 +39,7 @@ const IndexPage: React.FC<IndexPageProps> = ({ products }) => (
         </div>
       </div>
     </div>
-    {/* <div className="text-center pb-6 md:pb-12">
-      <h1 className="text-xl md:text-3xl lg:text-5xl font-bold">
-        All Products
-      </h1>
-    </div>
-
-    <ProductGrid products={products} /> */}
   </>
 );
-
-// export const getStaticProps: GetStaticProps = async () => {
-//   const { result: productIds } = await printful.get("sync/products");
-
-//   const allProducts = await Promise.all(
-//     productIds.map(async ({ id }) => await printful.get(`sync/products/${id}`))
-//   );
-
-//   const products: PrintfulProduct[] = allProducts.map(
-//     ({ result: { sync_product, sync_variants } }) => ({
-//       ...sync_product,
-//       variants: sync_variants.map(({ name, ...variant }) => ({
-//         name: formatVariantName(name),
-//         ...variant,
-//       })),
-//     })
-//   );
-
-//   return {
-//     props: {
-//       products: shuffle(products),
-//     },
-//   };
-// };
 
 export default IndexPage;
