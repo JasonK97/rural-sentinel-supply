@@ -1,4 +1,4 @@
-import type { NextApiRequest } from "next";
+import type, { NextApiRequest } from "next/types";
 
 declare global {
   interface Window {
