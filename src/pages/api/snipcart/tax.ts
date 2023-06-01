@@ -1,4 +1,4 @@
-import type, { NextApiRequest, NextApiResponse } from "next";
+import { NextApiRequest, NextApiResponse } from "next";
 
 import { printful } from "../../../lib/printful-client";
 import { SnipcartTaxItem, PrintfulShippingItem } from "../../../types";
