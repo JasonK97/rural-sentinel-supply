@@ -15,6 +15,8 @@ class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
             rel="stylesheet"
           />
+          <title>Rural Sentinel Supply</title>
+          <link rel="icon" href="/embroidered-hatchet.png" />
         </Head>
         <body className="antialiased">
           <Main />
