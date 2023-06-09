@@ -1,3 +1,4 @@
+import { NextSeo } from "next-seo";
 import useWishlistState from "../hooks/useWishlistState";
 
 import ProductGrid from "../components/ProductGrid";
@@ -7,6 +8,12 @@ const WishlistPage = () => {
 
   return (
     <>
+      <NextSeo
+        title='Wishlist | Rural Sentinel Supply'
+        description='Your wishlisted items for this session.'
+        canonical='ruralsentinel.com/wishlist'
+      />
+
       <div className="text-center pb-6 md:pb-12">
         <h1 className="text-xl md:text-3xl lg:text-5xl font-bold">Wishlist</h1>
       </div>

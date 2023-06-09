@@ -13,7 +13,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <WishlistProvider>
       <Layout>
-        <DefaultSeo {...defaultSEO} />
+        {/* <DefaultSeo {...defaultSEO} /> */}
         <Component {...pageProps} />
         <Analytics />
       </Layout>

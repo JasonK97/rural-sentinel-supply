@@ -1,8 +1,15 @@
 import Image from 'next/image'
+import { NextSeo } from 'next-seo';
 
 function HardGoodsPage() {
   return (
     <>
+      <NextSeo
+        title='Hard Goods | Rural Sentinel Supply'
+        description='Journals made print-to-order and shipped directly to your door.'
+        canonical='ruralsentinel.com/hard-goods'
+      />
+      
       <div className="max-w-xl mx-auto prose prose-blue">
         <h2>Field Journals</h2>
         <ul>

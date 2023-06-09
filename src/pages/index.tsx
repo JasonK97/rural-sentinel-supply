@@ -1,5 +1,6 @@
 import * as React from "react";
 import Link from "next/link";
+import { NextSeo } from "next-seo";
 
 import { PrintfulProduct } from "../types";
 
@@ -9,6 +10,12 @@ type IndexPageProps = {
 
 const IndexPage: React.FC<IndexPageProps> = () => (
   <>
+    <NextSeo
+      title='Home | Rural Sentinel Supply'
+      description='Safeguard the Herd. Defend the Tribe. Be the Father you were meant to be.'
+      canonical='ruralsentinel.com/'
+    />
+
     <div className="w-full bg-center bg-cover bg-[url('/unsplash/abigail-loney-unsplash.jpg')]">
       <div className="flex items-center justify-center w-full h-full bg-gray-900 bg-opacity-50 py-12">
         <div className="text-center">
