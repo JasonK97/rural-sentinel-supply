@@ -1,13 +1,7 @@
 import * as React from "react";
-import { GetStaticProps } from "next";
 import Link from "next/link";
-import shuffle from "lodash.shuffle";
 
-import { printful } from "../lib/printful-client";
-import { formatVariantName } from "../lib/format-variant-name";
 import { PrintfulProduct } from "../types";
-
-import ProductGrid from "../components/ProductGrid";
 
 type IndexPageProps = {
   products: PrintfulProduct[];
