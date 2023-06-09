@@ -1,5 +1,6 @@
 import { AppProps } from "next/app";
 import { DefaultSeo } from "next-seo";
+import { Analytics } from '@vercel/analytics/react';
 
 import "tailwindcss/tailwind.css";
 import "../styles/app.css";
@@ -14,6 +15,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Layout>
         <DefaultSeo {...defaultSEO} />
         <Component {...pageProps} />
+        <Analytics />
       </Layout>
     </WishlistProvider>
   );
