@@ -16,7 +16,8 @@ const IndexPage: React.FC<IndexPageProps> = () => (
       canonical='ruralsentinel.com/'
     />
 
-    <div className="w-full bg-center bg-cover bg-[url('/unsplash/abigail-loney-unsplash.jpg')]">
+    {/* <div className="w-full bg-center bg-cover bg-[url('/unsplash/abigail-loney-unsplash.jpg')]"> */}
+    <div className="w-full bg-center bg-cover bg-[url('/RSN01-xl.png')]">
       <div className="flex items-center justify-center w-full h-full bg-gray-900 bg-opacity-50 py-12">
         <div className="text-center">
           <div className="container px-4 mx-auto">
