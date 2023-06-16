@@ -46,7 +46,7 @@ const IndexPage: React.FC<IndexPageProps> = () => (
                 4th of July Freedom.
               </h2>
               <p className="max-w-3xl mx-auto mb-10 text-lg text-gray-300">
-                Celebrate our Independence with Rural Sentinel Supply&apos;s Freedom line.
+                Celebrate our Independence with the all new Freedom line.
               </p>
               <Link href="/soft-goods">
                 <a className="inline-block w-full md:w-auto mb-4 md:mr-6 py-5 px-8 text-sm font-bold uppercase border-2 border-transparent bg-gray-200 rounded hover:bg-gray-100 text-gray-800 transition duration-200">
