@@ -43,7 +43,7 @@ const IndexPage: React.FC<IndexPageProps> = () => (
                 Rural Sentinel Supply
               </span>
               <h2 className="mt-8 mb-6 text-4xl lg:text-5xl font-bold text-gray-100">
-                Night Raiders are here.
+                Night Raiders have come.
               </h2>
               <p className="max-w-3xl mx-auto mb-10 text-lg text-gray-300">
                 New Camo Hats now available. Become a Night Raider.
