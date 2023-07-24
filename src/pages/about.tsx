@@ -5,7 +5,7 @@ function AboutPage() {
     <>
       <NextSeo
         title='About Us | Rural Sentinel Supply'
-        description='Amidst the vast expanse of small towns and farmland, a group of dedicated individuals emerge as Rural Sentinels — watchers and protectors of their communities.'
+        description='Amidst the vast expanse of small towns and farmland, a group of dedicated individuals emerge as Rural Sentinels — watchers and protectors of their communities and families.'
         canonical='ruralsentinel.com/about'
       />
 
