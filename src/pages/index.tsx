@@ -46,7 +46,7 @@ const IndexPage: React.FC<IndexPageProps> = () => (
                 RSN01 Pattern Camo.
               </h2>
               <p className="max-w-3xl mx-auto mb-10 text-lg text-gray-300">
-                Up your Camo Game today.
+                Safeguard the Herd. Defend the Tribe.
               </p>
               <Link href="/soft-goods">
                 <a className="inline-block w-full md:w-auto mb-4 md:mr-6 py-5 px-8 text-sm font-bold uppercase border-2 border-transparent bg-gray-200 rounded hover:bg-gray-100 text-gray-800 transition duration-200">
