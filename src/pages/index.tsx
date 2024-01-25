@@ -17,12 +17,12 @@ const IndexPage: React.FC<IndexPageProps> = () => (
     />
 
     {/* <div className="w-full bg-center bg-cover bg-[url('/unsplash/abigail-loney-unsplash.jpg')]"> */}
-    {/* <div className="w-full bg-center bg-cover bg-[url('/RSN01-xl.png')]"> */}
-    <div className="w-full bg-center bg-cover bg-[url('/frosty-banner.png')]">
+    <div className="w-full bg-center bg-cover bg-[url('/RSN01-xl.png')]">
+    {/* <div className="w-full bg-center bg-cover bg-[url('/frosty-banner.png')]"> */}
       <div className="flex items-center justify-center w-full h-full bg-gray-900 bg-opacity-50 py-12">
         <div className="text-center">
           <div className="container px-4 mx-auto">
-            {/* <div className="max-w-4xl mx-auto text-center">
+            <div className="max-w-4xl mx-auto text-center">
               <span className="text-gray-200 font-semibold uppercase tracking-widest">
                 Rural Sentinel Supply
               </span>
@@ -37,8 +37,8 @@ const IndexPage: React.FC<IndexPageProps> = () => (
                   View Soft Goods
                 </a>
               </Link>
-            </div> */}
-            <div className="max-w-4xl mx-auto text-center">
+            </div>
+            {/* <div className="max-w-4xl mx-auto text-center">
               <span className="text-gray-200 font-semibold uppercase tracking-widest">
                 Rural Sentinel Supply
               </span>
@@ -53,7 +53,7 @@ const IndexPage: React.FC<IndexPageProps> = () => (
                   View Soft Goods
                 </a>
               </Link>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
