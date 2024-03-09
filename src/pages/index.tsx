@@ -18,7 +18,7 @@ const IndexPage: React.FC<IndexPageProps> = () => (
 
     {/* <div className="w-full bg-center bg-cover bg-[url('/unsplash/abigail-loney-unsplash.jpg')]"> */}
     {/* <div className="w-full bg-center bg-cover bg-[url('/RSN01-xl.png')]"> */}
-    <div className="w-full bg-center bg-cover bg-[url('/frosty-banner.png')]">
+    <div className="w-full bg-center bg-cover bg-[url('/wh-40k-banner.png')]">
       <div className="flex items-center justify-center w-full h-full bg-gray-900 bg-opacity-50 py-12">
         <div className="text-center">
           <div className="container px-4 mx-auto">
@@ -43,10 +43,10 @@ const IndexPage: React.FC<IndexPageProps> = () => (
                 Rural Sentinel Supply
               </span>
               <h2 className="mt-8 mb-6 text-4xl lg:text-5xl font-bold text-gray-100">
-                Stay Frosty
+                For the Impirium of Man!
               </h2>
               <p className="max-w-3xl mx-auto mb-10 text-lg text-gray-300">
-                The first casualty of war is truth.
+                Warhammer 40k Space Marines bringing the Emperor's rule to the galaxy.
               </p>
               <Link href="/soft-goods">
                 <a className="inline-block w-full md:w-auto mb-4 md:mr-6 py-5 px-8 text-sm font-bold uppercase border-2 border-transparent bg-gray-200 rounded hover:bg-gray-100 text-gray-800 transition duration-200">
