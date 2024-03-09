@@ -9,6 +9,7 @@ const Layout = ({ children }) => {
   const { hasItems } = useWishlistState();
   const { cart } = useSnipcartCount();
   const cartHasItems = cart.items.count !== 0;
+  const currYear = new Date().getFullYear();
 
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -56,28 +57,28 @@ const Layout = ({ children }) => {
                     <ul className="font-medium flex flex-col p-4 md:p-0 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white">
                       <li className="md:py-2 lg:py-0 md:w-full lg:w-12">
                         <Link href="/">
-                          <a className="block text-gray-800 hover:text-blue-600 p-2 transition" onClick={handleMobileMenuToggle}>
+                          <a className="block text-gray-800 hover:text-slate-400 p-2 transition" onClick={handleMobileMenuToggle}>
                             <span className="block w-full">Home</span>
                           </a>
                         </Link>
                       </li>
                       <li className="md:py-2 lg:py-0 md:w-full lg:w-12">
                         <Link href="/about">
-                          <a className="block text-gray-800 hover:text-blue-600 p-2 transition" onClick={handleMobileMenuToggle}>
+                          <a className="block text-gray-800 hover:text-slate-400 p-2 transition" onClick={handleMobileMenuToggle}>
                             <span className="block w-full">About</span>
                           </a>
                         </Link>
                       </li>
                       <li className="md:py-2 lg:py-0 md:w-full lg:w-12">
                         <Link href="/soft-goods">
-                          <a className="block text-gray-800 hover:text-blue-600 p-2 transition" onClick={handleMobileMenuToggle}>
+                          <a className="block text-gray-800 hover:text-slate-400 p-2 transition" onClick={handleMobileMenuToggle}>
                             <span className="block w-full">Soft&nbsp;Goods</span>
                           </a>
                         </Link>
                       </li>
                       <li className="md:py-2 lg:py-0 md:w-full lg:w-12">
                         <Link href="/hard-goods">
-                          <a className="block text-gray-800 hover:text-blue-600 lg:ml-10 p-2 transition" onClick={handleMobileMenuToggle}>
+                          <a className="block text-gray-800 hover:text-slate-400 lg:ml-10 p-2 transition" onClick={handleMobileMenuToggle}>
                             <span className="block w-full">Hard&nbsp;Goods</span>
                           </a>
                         </Link>
@@ -90,12 +91,12 @@ const Layout = ({ children }) => {
             <div className="flex-1 flex items-center justify-center">
               <Link href="/">
                 <a className="flex items-center text-gray-900">
-                  <div className="rounded-full w-13 h-13 flex items-center justify-center mr-4">
+                  <div className="rounded-full hover:opacity-50 transition w-13 h-13 flex items-center justify-center mr-4 pt-12 pb-6">
                     <Image 
-                      src="/RSS with name.png" 
+                      src="/embroidered-hatchet.png" 
                       alt="Rural Sentinel Supply Logo"
-                      height="150"
-                      width="150"
+                      height={75}
+                      width={125}
                     />
                   </div>
                   {/* <span className="text-lg font-medium">
@@ -106,7 +107,7 @@ const Layout = ({ children }) => {
             </div>
             <div className="md:w-1/3 flex items-center justify-end space-x-3 md:-mr-2.5 lg:-mr-12 lg:mt-8">
               {/* <button
-                className="snipcart-customer-signin appearance-none px-2 text-gray-800 hover:text-blue-600 rounded-md cursor-pointer focus:outline-none focus:text-blue-600 transition relative"
+                className="snipcart-customer-signin appearance-none px-2 text-gray-800 hover:text-slate-400 rounded-md cursor-pointer focus:outline-none focus:text-slate-400 transition relative"
                 aria-label="User login"
               >
                 <svg
@@ -120,7 +121,7 @@ const Layout = ({ children }) => {
               </button> */}
               <Link href="/wishlist">
                 <a
-                  className="px-2 text-gray-800 hover:text-blue-600 rounded-md cursor-pointer focus:outline-none focus:text-blue-600 relative transition"
+                  className="px-2 text-gray-800 hover:text-slate-400 rounded-md cursor-pointer focus:outline-none focus:text-slate-400 relative transition"
                   aria-label="Wishlist"
                 >
                   {hasItems && (
@@ -137,7 +138,7 @@ const Layout = ({ children }) => {
                 </a>
               </Link>
                 <button
-                  className="snipcart-checkout appearance-none px-2 text-gray-800 hover:text-blue-600 rounded-md cursor-pointer focus:outline-none focus:text-blue-600 transition relative"
+                  className="snipcart-checkout appearance-none px-2 text-gray-800 hover:text-slate-400 rounded-md cursor-pointer focus:outline-none focus:text-slate-400 transition relative"
                   aria-label="Cart"
                 >
                   {cartHasItems && (
@@ -162,35 +163,35 @@ const Layout = ({ children }) => {
       <footer className="max-w-6xl mx-auto px-6">
         <div className="py-6 border-t border-gray-100 text-center flex flex-col md:flex-row items-center justify-between">
           <p className="text-gray-600 text-sm">
-            Powered by
+            &copy;{currYear}&nbsp;
             <a
-              href="https://ruralsentinel.com"
+              href="https://instagram.com/rural.sentinel/"
               title="Protect the Herd. Protect the Tribe. Always be prepared."
               target="_blank"
               rel="noopener noreferrer"
-              className="ml-0.5 text-gray-800 hover:text-blue-600"
+              className="ml-0.5 text-gray-800 hover:text-slate-400"
             >
               Rural Sentinel Supply
             </a>
-            , Built by{" "}
+            , Powered by{" "}
             <a
-              href="https://www.instagram.com/rural.sentinel/"
+              href="https://jasonkent.dev/"
               title="Software Developer"
               target="_blank"
               rel="noopener noreferrer"
-              className="ml-0.5 text-gray-800 hover:text-blue-600"
+              className="ml-0.5 text-gray-800 hover:text-slate-400"
             >
-              @rural.sentinel
+              @JasonKent_
             </a>
           </p>
           <nav className="flex items-center justify-end space-x-3 md:space-x-6">
-            <Link href="/blog">
-              <a className="text-gray-800 hover:text-blue-600 p-1 transition text-sm">
+            {/* <Link href="/blog">
+              <a className="text-gray-800 hover:text-slate-400 p-1 transition text-sm">
                 Blog
               </a>
-            </Link>
+            </Link> */}
             <Link href="/terms-of-sale">
-              <a className="text-gray-800 hover:text-blue-600 p-1 transition text-sm">
+              <a className="text-gray-800 hover:text-slate-400 p-1 transition text-sm">
                 Terms of Sale
               </a>
             </Link>
