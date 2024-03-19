@@ -46,7 +46,7 @@ const IndexPage: React.FC<IndexPageProps> = () => (
                 For Freedom, Peace, and Democracy!
               </h2>
               <p className="max-w-3xl mx-auto mb-10 text-lg text-gray-300">
-                Squash propaganda and enemies of Democracy with Super Earth Approved Merch.
+                Squash propaganda and enemies of Democracy with this Super Earth Approved Merch.
               </p>
               <Link href="/soft-goods">
                 <a className="inline-block w-full md:w-auto mb-4 md:mr-6 py-5 px-8 text-sm font-bold uppercase border-2 border-transparent bg-gray-200 rounded hover:bg-gray-600 text-gray-800 hover:text-gray-300 transition">
