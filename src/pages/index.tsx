@@ -46,7 +46,7 @@ const IndexPage: React.FC<IndexPageProps> = () => (
                 Safeguard the Herd. Protect the Tribe.
               </h2>
               <p className="max-w-3xl mx-auto mb-10 text-lg text-gray-300">
-                For now, we're taking a break. Site will allow checkout again soon! Thanks!
+                For now, we&apos;re taking a break. Site will allow checkout again soon! Thanks!
               </p>
               <Link href="/soft-goods">
                 <a className="inline-block w-full md:w-auto mb-4 md:mr-6 py-5 px-8 text-sm font-bold uppercase border-2 border-transparent bg-gray-200 rounded hover:bg-gray-600 text-gray-800 hover:text-gray-300 transition">
